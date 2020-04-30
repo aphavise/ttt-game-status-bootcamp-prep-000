@@ -33,7 +33,7 @@ def won?(board)
       if position_1 == "X" && position_2 == "X" && position_3 == "X"  ||
          position_1 == "O" && position_2 == "O" && position_3 == "O"
           return win_combination
-          binding.pry
+
           return true
       else
           return false
@@ -41,6 +41,8 @@ def won?(board)
     end
     win_combination
 end
+
+  binding.pry
 #
 # def full?(board)
 #   board.none?{|i| i == " "}
