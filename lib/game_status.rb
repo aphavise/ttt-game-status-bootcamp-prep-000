@@ -46,10 +46,10 @@ def full?(board)
   board.reject?|space|
      if space == " "
        return false
-     else 
+     else
        return true
      end
-   end 
+   end
 end
 
 # def draw?(board)
