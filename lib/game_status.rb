@@ -42,7 +42,7 @@ def won?(board)
     win_combination
 end
 
-  binding.pry
+binding.pry
 #
 # def full?(board)
 #   board.none?{|i| i == " "}
