@@ -43,13 +43,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.reject?|space|
-     if space == " "
-       return false
-     else
-       return true
-     end
-   end
+  board.none?|i| i == " "}
 end
 
 # def draw?(board)
