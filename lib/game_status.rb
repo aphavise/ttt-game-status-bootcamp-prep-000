@@ -20,7 +20,6 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  # won_check = false
     WIN_COMBINATIONS.each do |win_combination|
 
       first_index = win_combination[0]
@@ -38,7 +37,6 @@ def won?(board)
           return false
       end
     end
-  # won_check
 end
 
 def full?(board)
