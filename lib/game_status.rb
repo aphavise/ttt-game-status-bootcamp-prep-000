@@ -21,18 +21,19 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   won_check = false
-    WIN_COMBINATIONS.each do |combination|
-      first_index = combination[0]
-      second_index = combination[1]
-      third_index = combination[2]
+    WIN_COMBINATIONS.each do |win_combination|
+
+      first_index = win_combination[0]
+      second_index = win_combination[1]
+      third_index = wincombination[2]
 
       position_1 = board[first_index]
       position_2 = board[second_index]
       position_3 = board[third_index]
 
       if position_1 == "X" && position_2 == "X" && position_3 == "X"  ||
-         position_1 == "O" && position_2 == "O" && position_3 == "O" 
-          return combination
+         position_1 == "O" && position_2 == "O" && position_3 == "O"
+          return win_combination
 
       else
           return false
