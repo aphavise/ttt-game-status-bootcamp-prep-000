@@ -1,3 +1,5 @@
+require 'pry'
+
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -31,12 +33,12 @@ def won?(board)
       if (position_1 == "X" && position_2 == "X" && position_3 == "X" ) ||
          (position_1 == "O" && position_2 == "O" && position_3 == "O" )
           return combination
-          return true
+          binding.pry
       else
           return false
       end
     end
-  won_check
+  # won_check
 end
 
 # def full?(board)
