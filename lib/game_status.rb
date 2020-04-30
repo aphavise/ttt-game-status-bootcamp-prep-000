@@ -46,6 +46,8 @@ def full?(board)
   board.reject?|space|
      if space == " "
        return false
+     else 
+       return true
      end
    end 
 end
