@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  won_check = false
+  # won_check = false
     WIN_COMBINATIONS.each do |combination|
       first_index = combination[0]
       second_index = combination[1]
@@ -40,19 +40,19 @@ end
 # def full?(board)
 #   board.none?{|i| i == " "}
 # end
-#
+# 
 # def draw?(board)
 #   if won?(board) == false && full?(board) == true
 #     true
 #   end
 # end
-#
+# 
 # def over?(board)
 #   if won?(board) != false || full?(board) == true || draw?(board) == true
 #     true
 #   end
 # end
-#
+# 
 # def winner(board)
 #   if won?(board) != false
 #     board[won?(board)[0]]
