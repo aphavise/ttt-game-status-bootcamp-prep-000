@@ -40,9 +40,10 @@ def won?(board)
       end
     end
     win_combination
+    binding.pry
 end
 
-binding.pry
+
 #
 # def full?(board)
 #   board.none?{|i| i == " "}
