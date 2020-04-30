@@ -37,9 +37,8 @@ def won?(board)
       else
           return false
       end
-  binding.pry
     end
-  # won_check
+  won_check
 end
 
 # def full?(board)
