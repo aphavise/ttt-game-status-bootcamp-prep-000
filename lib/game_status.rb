@@ -42,10 +42,10 @@ def won?(board)
   won_check
 end
 
-# def full?(board)
-#   board.none?{|i| i == " "}
-# end
-#
+def full?(board)
+  board.reject?{|i| i == " "}
+end
+
 # def draw?(board)
 #   if won?(board) == false && full?(board) == true
 #     true
