@@ -25,7 +25,7 @@ def won?(board)
 
       first_index = win_combination[0]
       second_index = win_combination[1]
-      third_index = wincombination[2]
+      third_index = win_combination[2]
 
       position_1 = board[first_index]
       position_2 = board[second_index]
