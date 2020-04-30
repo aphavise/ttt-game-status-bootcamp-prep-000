@@ -80,25 +80,3 @@ def won?(board)
     end
   won_check
 end
-
-def full?(board)
-  board.none?{|i| i == " "}
-end
-
-def draw?(board)
-  if won?(board) == false && full?(board) == true
-    true
-  end
-end
-
-def over?(board)
-  if won?(board) != false || full?(board) == true || draw?(board) == true
-    true
-  end
-end
-
-def winner(board)
-  if won?(board) != false
-    board[won?(board)[0]]
-  end
-end
